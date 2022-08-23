@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="myForm" role="form">
+            <div class="form-group">
+                <label>หมายเลขบัตรประชาชน</label>
+                <input type="text" class="form-control" placeholder="หมายเลขบัตรประชาชน">
+            </div>
+            <div>
+                <div class="form-group">
+                    <label>คำนำหน้านาม</label>
+                    <select class="form-control">
+                        <option value="null" selected>คำนำหน้านาม</option>
+                        <option value="นาย">นาย</option>
+                        <option value="นาง">นาง</option>
+                        <option value="นางสาว">นางสาว</option>
+                        <option value="เด็กชาย">เด็กชาย</option>
+                        <option value="เด็กหญิง">เด็กหญิง</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>ชื่อ นามสกุล</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="ชื่อ" name="FirstName">
+                        <input type="text" class="form-control" placeholder="นามสกุล" name="LastName">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>ที่อยู่</label>
+                <input type="text" class="form-control" placeholder="ที่อยู่" name="Address">
+            </div>
+            <div class="form-group">
+                <label>ตำบล/แขวง</label>
+                <input type="text" class="form-control" placeholder="ตำบล/แขวง" name="Sub-district">
+            </div>
+            <div class="form-group">
+                <label>อำเภอ/เขต</label>
+                <input type="text" class="form-control" placeholder="อำเภอ/เขต">
+            </div>
+            <div class="form-group">
+                <label>จังหวัด</label>
+                <select class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>รหัสไปรษณีย์</label>
+                <input type="text" class="form-control" placeholder="รหัสไปรษณีย์">
+            </div>
+            <button type="button" onclick="validateForm()" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="validator.js"></script>
+</html>

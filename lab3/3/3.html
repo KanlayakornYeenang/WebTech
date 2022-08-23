@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container {
+            width: 20vw;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        #box0,
+        #box1,
+        #box2,
+        #box3 {
+            width: 10vw;
+            height: 10vw;
+            background-size: contain;
+        }
+
+        #box0 {
+            background-image: url('http://10.0.15.20/312lab3/images/1.png');
+        }
+
+        #box1 {
+            background-image: url('http://10.0.15.20/312lab3/images/2.png');
+        }
+
+        #box2 {
+            background-image: url('http://10.0.15.20/312lab3/images/3.png');
+        }
+
+        #box3 {
+            background-image: url('http://10.0.15.20/312lab3/images/4.png');
+        }
+
+        button {
+            width: 20vw;
+            margin-top: 3vh;
+        }
+
+        .main {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="box" id="box0"></div>
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+        </div>
+        <button type="button" onClick="rotate()">Rotate</button>
+    </div>
+</body>
+<script type="text/javascript">
+    let box = document.getElementsByClassName("box")
+    let arrbg = ['http://10.0.15.20/312lab3/images/1.png', 'http://10.0.15.20/312lab3/images/2.png', 'http://10.0.15.20/312lab3/images/3.png', 'http://10.0.15.20/312lab3/images/4.png']
+    let arrstr = ['1', '2', '3', '4']
+    let j = 0;
+    function rotate() {
+        arrstr[1] = arrbg[0]
+        arrstr[2] = arrbg[3]
+        arrstr[3] = arrbg[1]
+        arrstr[0] = arrbg[2]
+        Array.prototype.forEach.call(box, function (element, index) {
+            box[index].style.backgroundImage = "url(" + arrstr[j] + ")"
+            j++
+            if (j > 3) { j = 0 }
+        });
+        arrbg[0] = arrstr[0]
+        arrbg[1] = arrstr[1]
+        arrbg[2] = arrstr[2]
+        arrbg[3] = arrstr[3]
+    }
+</script>
+
+</html>
