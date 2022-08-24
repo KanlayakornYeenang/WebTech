@@ -14,10 +14,10 @@ function validateForm() {
     else if (nameprefix == "null") {
         alert("ต้องเลือกคำนำหน้านาม")
     }
-    else if (fname.length <= 1 || fname.length >= 21 || !checkString(fname)) {
+    else if (fname.length < 2 || fname.length > 20 || !checkString(fname)) {
         alert("ชื่อต้องเป็นตัวอักษร ความยาวระหว่าง 2-20 ตัวอักษร");
     }
-    else if (lname.length <= 1 || lname.length >= 31 || !checkString(lname)) {
+    else if (lname.length < 2 || lname.length > 30 || !checkString(lname)) {
         alert("นามสกุลต้องเป็นตัวอักษร ความยาวระหว่าง 2-30 ตัวอักษร");
     }
     else if (address.length <= 5) {
