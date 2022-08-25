@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Prompt', sans-serif;
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.content {
+    display: flex;
+}
+
+.contentinner {
+    display: flex;
+    background: black;
+    width: 5vw;
+    padding: 0.5vw;
+}
+
+#mathpercent, #thaipercent, #engpercent, #scipercent, #socialpercent {
+    background: green;
+    width: 0vw;
+}
+
+@keyframes math {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 30vw;
+    }
+}
+
+@keyframes thai {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 40vw;
+    }
+}
+
+@keyframes eng {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 25vw;
+    }
+}
+
+@keyframes sci {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 20vw;
+    }
+}
+
+@keyframes social {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 25vw;
+    }
+}
+
+button {
+    margin: auto;
+    width: 10vw;
+    color: black;
+    margin-top: 1vw;
+}
