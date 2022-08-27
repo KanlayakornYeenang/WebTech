@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black !important;
+}
+
+.main {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container, .output-container {
+    padding: 2vw;
+    width: 28vw;
+    border: #eee 0.55vw solid;
+}
+
+.input-container {
+    background-color: white;
+    height: fit-content;
+}
+ .output-container {
+    background-color: #eee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+ }
+
+button {
+    width: 100%;
+}
+
+.namecard-container {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 13s ease infinite;
+    width: 22vw;
+    height: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    padding-left: 2vw;
+    line-height: 1.5vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#fullname {
+    font-weight: bold;
+    font-size: 1.75vw;
+}
+
+#phone, #email, #company {
+    font-size: 1vw;
+}
