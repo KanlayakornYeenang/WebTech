@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <p class="text3 tn" onclick="goto('page1')">home</p>
+        <p class="text3 tn" onclick="goto('profile')">profile</p>
+        <p class="text3 tn" onclick="goto('activity')">activity</p>
+        <p class="text3 tn" onclick="goto('workings')">workings</p>
+    </div>
+    <div id="page1">
+        <div class="inner-page1-1">
+            <p class="text1">กัลยกร ยี่นาง</p>
+            <p class="text2">KANLAYAKORN<br>YEENANG</p>
+            <p class="text3">School of Information Technology, KMITL</p>
+            <button id="seemypf" onclick="goto('profile')">See my profile</button>
+        </div>
+        <div class="inner-page1-2">
+            <img id="img1"
+                src="https://cdn.discordapp.com/attachments/812749326543487058/1015463018349461535/5eec150bba83dc1d-1.jpg">
+        </div>
+    </div>
+    <div id="profile">
+        <div class="inner-profile-content">
+            <div class="img2"></div>
+            <div class="name2">
+                <p class="text4">KANLAYAKORN<br>YEENANG</p>
+                <p class="text1" style="text-align:center; padding-bottom:1vw">กัลยกร ยี่นาง</p>
+                <span class="text5">
+                    <p>ชื่อเล่น: หมูกรอบ<br>
+                        เกิด: 28 มีนาคม 2545 (20 ปี)<br>
+                        อาหารที่ชอบ: อาหารเส้น, หมูกรอบ<br>
+                        สีที่ชอบ: ม่วง<br>
+                        งานอดิเรก: เล่นกับแมว (เสือดาว)</p>
+                </span>
+                <div class="social">
+                    <i class="fa" onclick="window.open('https://www.facebook.com/profile.php?id=100004291367649','mywindow');">&#xf230;</i>
+                    <i class="fa" onclick="window.open('https://www.instagram.com/ilovemhuukrob/','mywindow');">&#xf16d;</i>
+                    <i class="fa" onclick="window.open('https://github.com/ilovemhuukrob','mywindow');">&#xf09b;</i>
+                    <i class="fa" onclick="window.open('https://steamcommunity.com/profiles/76561198332701783/','mywindow');">&#xf1b7;</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="activity">
+        <div class="inner-activity-img">
+            <img id="img3"
+                src="https://cdn.discordapp.com/attachments/933591523189215235/1015554995082506310/747EC01F-CCEC-45DA-87FF-4199277BE52B.jpg"
+                alt="">
+            <img id="img4"
+                src="https://cdn.discordapp.com/attachments/933591523189215235/1015555006960762890/C3DF55B9-5B72-4CF1-9045-30A95F9EDCB5.jpg"
+                alt="">
+            <img id="img5"
+                src="https://cdn.discordapp.com/attachments/933591523189215235/1015554965424590858/E6D58563-FDD3-4BE0-8995-140C3858B428.jpg"
+                alt="">
+            <img id="img6"
+                src="https://cdn.discordapp.com/attachments/933591523189215235/1015555444451844156/Genshin_Impact.jpg"
+                alt="">
+        </div>
+        <div class="inner-activity-content">
+            <div class="activity-content">
+                <p style="color:#a5c36b; line-height:0.5vw" class="text2">Activity</p>
+                <p class="text1">กิจกรรมที่ชอบทำ</p>
+                <span class="text3" style="text-align:left; position:relative; top:20%;">
+                    <li>ไปหาอะไรอร่อยๆ กิน</li>
+                    <li>เล่นเกม</li>
+                    <li>เล่นกับแมว</li>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="workings">
+        <div class="workname text2">W<br>O<br>R<br>K<br>I<br>N<br>G<br>S</div>
+        <div class="work">
+            <img id="img7" src="https://cdn.discordapp.com/attachments/812749326543487058/979324272981970974/bad.png"
+                alt="">
+            <p class="text6">Witch Academy Game</p>
+            <div style="width:100%; height:fit-content; display:flex; justify-content:center">
+                <i class="fa" onclick="window.open('https://github.com/ilovemhuukrob/WitchAcademy','mywindow');" style="font-size:1.5vw;">&#xf09b;</i>
+                <p style="font-size:1vw; padding-left:0.5vw">Github</p>
+            </div>
+            <p class="text6">
+                Game Designer<br>
+                Game Developer</p>
+        </div>
+        <div class="work">
+            <img id="img7" src="https://cdn.discordapp.com/attachments/812749326543487058/979331495871250432/sander.png"
+                alt="">
+            <p class="text6">Chicktronaut Game</p>
+            <div style="width:100%; height:fit-content; display:flex; justify-content:center">
+                <i class="fa" onclick="window.open('https://chicktronaut.netlify.app/','mywindow');" style="font-size:1.5vw;">&#xf0c1;</i>
+                <p style="font-size:1vw; padding-left:0.5vw">URL</p>
+            </div>
+            <p class="text6">
+                Game Designer<br>
+                Game Developer</p>
+        </div>
+        <div class="work">
+            <img id="img7" src="https://cdn.discordapp.com/attachments/933591523189215235/1015577278203310130/Untitled-1.jpg"
+                alt="">
+            <p class="text6">SVG Under The Sea</p>
+            <div style="width:100%; height:fit-content; display:flex; justify-content:center">
+                <i class="fa" onclick="window.open('https://codebox.jabont.com/branch/2590da021fc885427abd6cf2438103b1/?v=1649485375','mywindow');" style="font-size:1.5vw;">&#xf0c1;</i>
+                <p style="font-size:1vw; padding-left:0.5vw">URL</p>
+            </div>
+            <p class="text6">
+                Designer<br>
+                &nbsp;
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

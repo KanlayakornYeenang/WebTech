@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab4/5</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="contaniner-fluid overflow-hidden bg-light">
+        <br>
+        <div class="d-flex justify-content-center">
+            <h1>PANDA FOOD <div class="p-2 d-inline bg-warning rounded"> HUB</div>
+            </h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p>Delivery by PandaHub.</p>
+        </div>
+        <div class="d-flex row">
+            <div class="col-md-7">
+                <div class="card ml-5">
+                    <div class="row">
+                        <div class="col-md-4 m-0 p-0 h-1">
+                            <img src="https://static.posttoday.com/media/content/2018/09/28/554F298D82F74756B9BF7F06E8731F23_1000.jpg"
+                                class="img-fluid rounded float-left" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">ก๋วยเตี๋ยวเรือ</h5>
+                                <p class="card-text text-black-50">Delivery by PandaHub.</p>
+                                <button type="button" onclick="addOrder(0)" class="btn btn-warning mt-3 float-right">Add
+                                    Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-5 mt-4">
+                    <div class="row">
+                        <div class="col-md-4 m-0 p-0 h-1">
+                            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d1484b5876454.37434686.jpeg"
+                                class="img-fluid rounded float-left" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">ราเมน</h5>
+                                <p class="card-text text-black-50">Delivery by PandaHub.</p>
+                                <button type="button" onclick="addOrder(1)" class="btn btn-warning mt-3 float-right">Add
+                                    Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-5 mt-4">
+                    <div class="row">
+                        <div class="col-md-4 m-0 p-0">
+                            <img src="https://img-global.cpcdn.com/recipes/f42b9d3d8815100f/680x482cq70/%E0%B8%A3%E0%B8%9B-%E0%B8%AB%E0%B8%A5%E0%B8%81-%E0%B8%82%E0%B8%AD%E0%B8%87-%E0%B8%AA%E0%B8%95%E0%B8%A3-%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5-%EC%A7%9C%EC%9E%A5%EB%A9%B4-%E0%B8%88%E0%B8%B2%E0%B8%88%E0%B8%87%E0%B8%A1%E0%B8%A2%E0%B8%AD%E0%B8%99.jpg"
+                                class="img-fluid rounded float-left" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">จาจังมยอน</h5>
+                                <p class="card-text text-black-50">Delivery by PandaHub.</p>
+                                <button type="button" onclick="addOrder(2)" class="btn btn-warning mt-3 float-right">Add
+                                    Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-header bg-primary text-white d-flex justify-content-center">
+                    รายการออเดอร์
+                </div>
+                <ul class="list-group list-group-flush" id="list">
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="bg-light p-2"></div>
+    </div>
+</body>
+
+</html>

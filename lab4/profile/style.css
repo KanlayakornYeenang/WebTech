@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    font-family: 'Mitr', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: #8460a8;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.tn {
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.tn:hover {
+    opacity: 0.5;
+}
+
+#page1 {
+    width: 100%;
+    height: 50vh;
+    background-color: #221d0a;
+    display: flex;
+    justify-content: center;
+    gap: 2.5%;
+    padding-top: 7vh;
+}
+
+.text1 {
+    font-size: 1.5vw;
+    color: #8460a8;
+}
+
+.text2 {
+    font-size: 3vw;
+    line-height: 3vw;
+    color: white;
+    font-weight: 500;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.text3 {
+    font-size: 1.5vw;
+    color: white;
+    padding-bottom: 1.5vw;
+}
+
+#img1 {
+    height: 85%;
+    border-radius: 40px;
+}
+
+.inner-page1-1,
+.inner-page1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#seemypf {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5vw;
+    width: 16vw;
+    border: 0.2vw white solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#seemypf:hover {
+    opacity: 0.5;
+    color: #221d0a;
+    background-color: white;
+}
+
+#profile {
+    width: 100%;
+    height: 100vh;
+    background-color: #fffdd6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-profile-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 50%;
+    display: flex;
+    background-color: #fffdd6;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.img2 {
+    width: 50%;
+    height: 100%;
+    background-image: url("https://cdn.discordapp.com/attachments/933591523189215235/1015529522478714900/DFEAC033-85B7-4902-B4E0-12858DE29BDD.jpg");
+    background-size: cover;
+    top: 50%;
+}
+
+.text4 {
+    font-size: 2.5vw;
+    line-height: 3vw;
+    color: #221d0a;
+    font-weight: 500;
+    text-align: center;
+}
+
+.name2 {
+    margin: auto;
+}
+
+.text5 {
+    font-size: 1vw;
+}
+
+.inner-profile-bg1,
+.inner-profile-bg2 {
+    width: 100%;
+    height: 50%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+    letter-spacing: 1vw;
+    font-size: 2vw;
+}
+
+#activity {
+    background-color: #221d0a;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.inner-activity-img {
+    width: 42%;
+    height: 100%;
+}
+
+.inner-activity-content {
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activity-content {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+#img3,
+#img4,
+#img5,
+#img6 {
+    position: absolute;
+    height: 40%;
+}
+
+#img3 {
+    transform: translate(-5%, 30%) rotate(-5deg);
+    z-index: 2;
+}
+
+#img4 {
+    transform: translate(-3%, 133%) rotate(5deg);
+    z-index: 1;
+}
+
+#img5 {
+    transform: translate(100%, 130%) rotate(-3deg);
+    z-index: 0;
+}
+
+#img6 {
+    transform: translate(90%, 40%) rotate(9deg);
+    z-index: 0;
+}
+
+#workings {
+    width: 100%;
+    height: 100vh;
+    background-color: #fffdd6;
+    display: flex;
+}
+
+.work {
+    margin: auto;
+    border-radius: 30px;
+    width: 20%;
+    height: 65%;
+    background: linear-gradient(-45deg, #8460a8, #fffdd6);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.45vw #221d0a solid;
+    gap: 1vw;
+}
+
+.workname {
+    margin: auto;
+    text-align: center;
+    font-size: 4vw;
+    color: #221d0a;
+    line-height: 4vw;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#img7 {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    width: 14vw;
+    height: 14vw;
+    padding: 5%;
+    background-color: white;
+}
+
+.text6 {
+    color:#221d0a;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.fa {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
