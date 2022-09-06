@@ -9,8 +9,6 @@ request.open("GET", requestURL, true);
 request.send();
 
 function ExtractData(data) {
-    const one = 1;
-const two = 2;
     for (let i = 0; i < data.members.length; i++) {
         document.write(`${i+1} <b> ${data.members[i].firstname} ${data.members[i].lastname} </b> (${data.members[i].gender}) is a ${data.members[i].position}, ${data.members[i].address}<br>`);
     }
